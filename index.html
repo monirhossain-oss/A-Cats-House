@@ -38,7 +38,7 @@
 <body class="">
     <header>
         <!-- navber section start  -->
-         <nav class="flex justify-between items-center font-Sora serif bg-[#FFF9F4] sticky top-0 lg:px-16 px-4 py-3">
+         <nav class="flex justify-between items-center font-Sora serif bg-[#FFF9F4] z-10 sticky top-0 lg:px-16 px-4 py-3">
             <div class="flex">
                 <img src="images/logo-header.png" alt="">
                 <p class="hidden lg:block md:block font-bold text-2xl pt-1">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
@@ -63,19 +63,19 @@
          <!-- banner section start -->
           <section class="lg:px-16 px-4 py-3">
             <!-- title part  -->
-             <div class="">
-                <div class="h-screen bg-no-repeat bg-right lg:bg-[url('./images/cat-big.png')] bg-cover">
-                    <div class="w-2/3">
-                        <h1 class="font-adlam text-[56px]">Pamper Your Pet, <br> Because They Deserve the Bes</h1>
-                        <p class="text-[20px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p> <br>
+             <div>
+                <div class="relative">
+                    <div class="max-w-screen h-screen bg-cover bg-center bg-no-repeat md:bg-[url('./images/cat-big.png')]">
+                        <h1 class="font-adlam text-[40px] lg:text-[56px]">Pamper Your Pet, <br> Because They Deserve <br>the Bes</h1>
+                        <p class="text-[20px]">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p> <br>
                         <button class="text-[20px] px-4 py-1 bg-[#FFDC26]  rounded-lg">Find a pet</button>
         
                      </div>
+                     <div class="md:hidden block">
+                        <img src="images/cat-big.png" alt="">
+                     </div>
                 </div>
-                
-                 
              </div>
-
              <div class="bg-gray-100 flex items-center justify-center">
                 <div class="overflow-hidden w-full bg-gray-200 py-2">
                     <p class="scrolling-text text-2xl font-adlam text-blue-600 whitespace-nowrap">
@@ -91,11 +91,11 @@
         <section class="mt-10">
             <!-- Card Categories section -->
              <div class="lg:px-16 px-4 py-3">
-                <div class="mb-5">
+                <div class="mb-auto">
                     <h2 class="text-[36px] font-adlam">Browse By Categories</h2>
                 </div>
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-6 items-center text-center">
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -106,7 +106,7 @@
                             <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -117,7 +117,7 @@
                             <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -128,7 +128,7 @@
                             <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -139,7 +139,7 @@
                             <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -150,7 +150,7 @@
                             <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                    <div class="bg-yellow-200 h-[254px] rounded-lg flex flex-col justify-center gap-4 items-center">
                         <div class="avatar">
                             <div class="w-24 rounded-full p-5 bg-white">
                                 <img src="images/dog-cartoon.png" />
@@ -172,23 +172,23 @@
                
                  <!-- big card  -->
 
-                <div class="lg:px-16  px-4 py-3 lg:w-1/2 bg-yellow-200 rounded-xl">
+                <div class="lg:px-16  px-4 py-3  bg-yellow-200 rounded-xl">
                     <h2 class="font-adlam text-[20px]">T-Shirt For Dogs</h2><br>
                     <p class="text-gray-400">Descover a world of trears,toys and essantial handpicked for</p>
                     <br>
                     <button class="bg-white rounded-lg py-1 px-4">Shop Now</button>
-                    <img src="images/cute-pet-mid.png" alt="">
+                    <img class="ml-10" src="images/cute-pet-mid.png" alt="">
                 </div>
                 <!-- small card section  -->
-                <div class="grid grid-cols-2 lg:grid-cols-3  gap-4 lg:px-16  px-4 py-3 ">
-                    <div class="flex bg-gray-300 pt-2  py-2 px-4 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                <div class="grid grid-cols-2 w-full lg:grid-cols-3  gap-4   px-4 py-3 ">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -198,14 +198,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -215,14 +215,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -232,14 +232,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -249,14 +249,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -266,14 +266,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -283,14 +283,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 py-4 px-10 space-x-2">
-                        <div class="">
-                            <img class="py-2 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -300,14 +300,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-2 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -317,14 +317,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
-                        <div class="">
-                            <img class="py-2 rounded-lg" src="images/dog-cartoon.png" alt="">
+                    <div class="flex bg-gray-300 py-2 items-center justify-start pl-4 rounded-xl space-x-4">
+                        <div>
+                            <img class="p-4 bg-white rounded-xl" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
                         <div class="">
-                            <div class="flex">
+                            <div class="flex items-center">
                                 <i class="fa-solid fa-star"></i>
                                 <P>4.5</P>
                             </div>
@@ -334,6 +334,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
          </section>
@@ -345,9 +346,9 @@
              <div>
                 <h2 class="font-adlam text-[36px]  lg:px-16 px-4 py-3">Everyday low Price</h2>
              </div>
-             <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:px-16 px-4 py-3">
+             <div class="grid lg:grid-cols-10 grid-cols-1 gap-5 lg:px-16 px-4 py-3">
                 <!-- first card  -->
-                <div class="lg:px-16 px-4 py-3 flex lg:grid-cols-[60%_40%] rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
+                <div class="lg:px-16 px-4 py-3 flex lg:col-span-6  rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
                     <div class="py-4">
                         <p class="font-sora text-[20px]">Under Price</p>
                         <h2 class="font-adlam text-[32px]">Pet Grooming Mitt</h2>
@@ -359,7 +360,7 @@
                     </div>
                 </div>
                 <!-- second cord  -->
-                 <div class="flex w-full rounded-xl bg-gradient-to-r  from-[#FFF9F4] to-[#F9DF8A]">
+                 <div class="flex w-full rounded-xl lg:col-span-4 bg-gradient-to-r  from-[#FFF9F4] to-[#F9DF8A]">
                     <div class="py-10 px-10">
                         <h2 class="font-adlam text-[32px]">T-Shirt for Dogs</h2>
                         <h2 class="font-adlam text-[56px] text-[#FFDC26]">$7.99</h2>
