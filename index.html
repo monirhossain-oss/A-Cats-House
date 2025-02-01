@@ -20,6 +20,18 @@
         .font-sora{
             font-family: "Sora", serif;
         }
+        .scrolling-text {
+          animation: scroll 10s linear infinite;
+        }
+    
+        @keyframes scroll {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
 
     </style>
 </head>
@@ -51,15 +63,27 @@
          <!-- banner section start -->
           <section class="lg:px-16 px-4 py-3">
             <!-- title part  -->
-             <div>
-                <div class="w-2/3">
-                    <h1 class="font-adlam text-[56px]">Pamper Your Pet, <br> Because They Deserve the Bes</h1>
-                    <p class="text-[20px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p> <br>
-                    <button class="text-[20px] px-4 py-1 bg-[#FFDC26]  rounded-lg">Find a pet</button>
-    
-                 </div>
-                 <div style="" class=""></div>
+             <div class="">
+                <div class="h-screen bg-no-repeat bg-right lg:bg-[url('./images/cat-big.png')] bg-cover">
+                    <div class="w-2/3">
+                        <h1 class="font-adlam text-[56px]">Pamper Your Pet, <br> Because They Deserve the Bes</h1>
+                        <p class="text-[20px]">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p> <br>
+                        <button class="text-[20px] px-4 py-1 bg-[#FFDC26]  rounded-lg">Find a pet</button>
+        
+                     </div>
+                </div>
+                
+                 
              </div>
+
+             <div class="bg-gray-100 flex items-center justify-center">
+                <div class="overflow-hidden w-full bg-gray-200 py-2">
+                    <p class="scrolling-text text-2xl font-adlam text-blue-600 whitespace-nowrap">
+                      This is a Cat's house 🚀
+                    </p>
+                  </div>
+            </div>
+            
           </section>
     </header>
     <!-- main section  -->
@@ -70,66 +94,80 @@
                 <div class="mb-5">
                     <h2 class="text-[36px] font-adlam">Browse By Categories</h2>
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
-                    <div class="bg-yellow-300 px-8 py-4 rounded-lg ">
-                        <div>
-                            <img class=" mx-auto py-8" src="images/dog-cartoon.png" alt="">
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-6 items-center text-center">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
+                        <div>
                             <h3 class="font-adlam text-[20px]">Dog</h3>
-                            <p class="font-sora">3 items</p>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-300 px-8 py-4 rounded-lg">
-                        <div>
-                            <img class=" mx-auto  py-8" src="images/fish-cartoon.png" alt="">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
-                            <h3 class="font-adlam text-[20px]">Fish</h3>
-                            <p class="font-sora">3 items</p>
+                        <div>
+                            <h3 class="font-adlam text-[20px]">Dog</h3>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-300 px-8 py-4 rounded-lg">
-                        <div>
-                            <img class="  py-8 mx-auto" src="images/cat-cartoon.png" alt="">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
-                            <h3 class="font-adlam text-[20px]">Cat</h3>
-                            <p class="font-sora">3 items</p>
+                        <div>
+                            <h3 class="font-adlam text-[20px]">Dog</h3>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-300 px-8 py-4 rounded-lg">
-                        <div>
-                            <img class=" mx-auto  py-8" src="images/bird-cartoon.png" alt="">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
-                            <h3 class="font-adlam text-[20px]">Brids</h3>
-                            <p class="font-sora">3 items</p>
+                        <div>
+                            <h3 class="font-adlam text-[20px]">Dog</h3>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-300 px-8 py-4 rounded-lg">
-                        <div>
-                            <img class=" mx-auto  py-8" src="images/mouse-cartoon.png" alt="">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
-                            <h3 class="font-adlam text-[20px]">Small pet</h3>
-                            <p class="font-sora">3 items</p>
+                        <div>
+                            <h3 class="font-adlam text-[20px]">Dog</h3>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
-                    <div class="bg-yellow-300 px-10 py-4 rounded-lg">
-                        <div>
-                            <img class=" mx-auto  py-8" src="images/rabbit-cartoon.png" alt="">
+                    <div class="bg-yellow-200 px-4 py-4 rounded-lg flex flex-col items-center">
+                        <div class="avatar">
+                            <div class="w-24 rounded-full p-5 bg-white">
+                                <img src="images/dog-cartoon.png" />
+                            </div>
                         </div>
-                        <div class="text-center ">
-                            <h3 class="font-adlam text-[20px]">Rabbit</h3>
-                            <p class="font-sora">3 items</p>
+                        <div>
+                            <h3 class="font-adlam text-[20px]">Dog</h3>
+                            <p class="font-sora">Items</p>
                         </div>
                     </div>
                 </div>
+                
+                
              </div>
         </section>
         <!-- Pet Products section  -->
-         <section class="mb-8 lg:bg-orange-100">
+         <section class="mb-8 lg:bg-orange-100 mt-16">
             <div class="flex flex-col lg:px-16 px-4 py-3  lg:flex-row ">
                
                  <!-- big card  -->
@@ -143,9 +181,9 @@
                 </div>
                 <!-- small card section  -->
                 <div class="grid grid-cols-2 lg:grid-cols-3  gap-4 lg:px-16  px-4 py-3 ">
-                    <div class="flex bg-gray-300 pt-8  py-2 px-10 rounded-xl space-x-4">
+                    <div class="flex bg-gray-300 pt-2  py-2 px-4 rounded-xl space-x-4">
                         <div class="">
-                            <img class="py-4  rounded-lg" src="images/dog-cartoon.png" alt="">
+                            <img class="py-4 rounded-lg" src="images/dog-cartoon.png" alt="">
                             
                         </div>
                         
@@ -309,7 +347,7 @@
              </div>
              <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:px-16 px-4 py-3">
                 <!-- first card  -->
-                <div class="lg:px-16 px-4 py-3 flex rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
+                <div class="lg:px-16 px-4 py-3 flex lg:grid-cols-[60%_40%] rounded-xl bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD]">
                     <div class="py-4">
                         <p class="font-sora text-[20px]">Under Price</p>
                         <h2 class="font-adlam text-[32px]">Pet Grooming Mitt</h2>
@@ -321,7 +359,7 @@
                     </div>
                 </div>
                 <!-- second cord  -->
-                 <div class="flex rounded-xl bg-gradient-to-r  from-[#F8CCFB] to-[#ACD2FD]">
+                 <div class="flex w-full rounded-xl bg-gradient-to-r  from-[#FFF9F4] to-[#F9DF8A]">
                     <div class="py-10 px-10">
                         <h2 class="font-adlam text-[32px]">T-Shirt for Dogs</h2>
                         <h2 class="font-adlam text-[56px] text-[#FFDC26]">$7.99</h2>
@@ -332,34 +370,36 @@
                  </div>
 
              </div>
+            
              
            </section>
     </main>
-    <!-- footer section  -->
-    <footer class="">
-         <section> 
+    
+    <footer>
             <div>
                 <div class="bg-orange-300 my-96 pt-20 pb-10 lg:pt-28 relative">
-                    <div class="container absolute w-[80%] items-center top-0 right-0 left-0 mx-auto -translate-y-1/2">
+                    <!-- footer section  -->
+                    <div class="container absolute w-[90%] items-center top-0 right-0 left-0 mx-auto -translate-y-1/2">
                         <div class="bg-green-300 flex-col-1 lg:flex gap-0 lg:gap-10  rounded-xl">
                             <div class="py-10">
                                 <img src="images/cute-pet-mid.png" alt="">
                             </div>
                             <div class=" py-4 lg:py-28 px-4">
-                                <div class="text-center pb-2">
+                                <div class="text-center lg:text-start pb-2">
                                     <h2 class="font-adlam text-[36px]">Get Pawsome News!</h2>
                                     <p class="font-sora text-[20px]">Exclusive training tips, ticks, product deals and more.</p>
                                 </div>    
-                                <div class="items-center space-y-4 ">
+                                <div class="space-y-4 ">
                                     <input  type="email" placeholder="Your Email Address" class="w-full px-8 py-4 rounded-lg outline-none"><br>
-                                    <button class="text-[20px] px-4 py-1 bg-[#FFDC26]  rounded-lg">Subscribe</butto>
+                                    <button class="text-[20px]  px-4 py-1 bg-[#FFDC26]  rounded-lg">Subscribe</butto>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- footer second part -->
                     <div class="mt-96 lg:mt-56  font-sora">
                         <div class="flex-row space-y-8 lg:flex  justify-between  lg:px-16 px-4 py-3 ">
-                            <div>
+                            <div class="space-y-3">
                                 <div class="flex">
                                     <img src="images/logo-footer.png" alt="">
                                     <p class="text-[26px]">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
@@ -388,10 +428,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-         </section>
-        <!-- footer second part -->
-        
+            </div>    
     </footer>
 </body>
 </html>
