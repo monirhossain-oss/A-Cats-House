@@ -23,6 +23,20 @@
         .scrolling-text {
           animation: scroll 10s linear infinite;
         }
+        @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
     
         @keyframes scroll {
           0% {
@@ -76,13 +90,12 @@
                      </div>
                 </div>
              </div>
-             <div class="bg-gray-100 flex items-center justify-center">
-                <div class="overflow-hidden w-full bg-gray-200 py-2">
-                    <p class="scrolling-text text-2xl font-adlam text-blue-600 whitespace-nowrap">
-                      This is a Cat's house 🚀
-                    </p>
-                  </div>
-            </div>
+             <div class="w-full flex items-center justify-center">
+                <div class="bg-gradient-to-r from-slate-600 to-slate-100 text-white text-center p-10 rounded-lg shadow-lg animate-fade-in">
+                  <h1 class="text-4xl font-bold mb-4 animate-bounce">Welcome to My Website</h1>
+                  <p class="text-lg"></p>
+                </div>
+              </div>
             
           </section>
     </header>
@@ -431,5 +444,34 @@
                 </div>
             </div>    
     </footer>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
